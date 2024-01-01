@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B153C"
+    tools:context=".Appointment.AppointSuccActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccination"
+            android:textColor="@color/txtColorLight"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/aclonica"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/calendar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Booking Successfully."
+            android:textColor="@color/txtColorLight"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#17C2EC"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textAllCaps="false"
+            android:text="Re-schedule"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use the above button, to re-schedule your
+appointment to when is convinient."
+            android:textColor="@color/txtColorLight"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:text="Hone"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#17C2EC"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+    </LinearLayout>
+</RelativeLayout>
